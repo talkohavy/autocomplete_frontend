@@ -1,0 +1,202 @@
+.wrapper {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  border-radius: 5px;
+  max-height: fit-content;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+.wrapperOnFocus {
+  z-index: 3;
+}
+
+.inputAndErrorWrapper {
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.inputAndLabelWrapper {
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.inputAndLabelWrapper:hover svg {
+  visibility: visible;
+}
+
+.input {
+  height: 40px;
+  border: 1.5px #333 solid;
+  border-radius: 5px;
+  font-size: var(--fs4);
+  padding: 0 10px;
+  font-family: Consolas, Arial, Helvetica, sans-serif;
+  position: relative;
+  background-color: transparent;
+}
+
+.inputOnHover {
+  border-color: rgb(69, 147, 211);
+}
+
+.inputOnFocus {
+  border-color: #4747fb;
+  color: black;
+}
+
+.inputOnError {
+  border-color: red;
+  color: red;
+  /* color input's value as red */
+}
+
+.msgBlockOnError {
+  color: red;
+  font-size: var(--fs2);
+  padding: 0 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--fs3);
+  width: auto;
+  background-color: white;
+  color: rgb(95, 92, 92);
+  padding: 0px 5px;
+  margin: 0 2px;
+  height: 10px;
+  z-index: 2;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+.labelOnFloatRtl {
+  top: -5px;
+  transform: translateY(0px) translateX(10%) scale(0.8);
+}
+
+.labelOnFloatLtr {
+  top: -5px;
+  transform: translateY(0px) translateX(-10%) scale(0.8);
+}
+
+.labelOnFocus {
+  color: #4747fb;
+}
+
+.labelOnError {
+  color: red;
+}
+
+.arrowAndX {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownOption {
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownOption:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.optionLabel {
+  width: auto;
+  margin: 0 5px;
+  font-size: var(--fs2);
+}
+
+.optionOnHover {
+  background-color: rgb(194, 194, 194);
+}
+
+.selectedOption {
+  background-color: rgb(247, 201, 201);
+}
+
+.arrow {
+  position: relative;
+  top: 2px;
+  width: 18px;
+  height: 10.125px;
+}
+
+.arrowOnFocus {
+  transform: translateY(-7px) rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: 41px;
+  max-width: 100%;
+  max-height: 250px;
+  overflow-y: scroll;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.menu::-webkit-scrollbar {
+  width: 10px;
+  opacity: 0.5;
+  overflow-x: hidden;
+}
+
+.menu::-webkit-scrollbar-track {
+  background: #7d8784;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background: rgba(93, 93, 255, 0.9);
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 17, 255);
+  opacity: 0.5;
+}
+
+.clearBtn {
+  visibility: hidden;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.clearBtn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.clearBtnVisible {
+  visibility: visible;
+}

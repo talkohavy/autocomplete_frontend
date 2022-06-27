@@ -1,0 +1,14 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 1000px;
+  padding: 10px;
+}
+
+.pageTitle {
+  font-size: var(--fs6);
+  text-align: center;
+  margin-bottom: 90px;
+}

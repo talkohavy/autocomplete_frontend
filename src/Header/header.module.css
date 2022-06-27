@@ -1,0 +1,27 @@
+.header {
+  position: sticky;
+  top: 0;
+  height: var(--headerHeight);
+  z-index: 3;
+  background-color: rgb(253, 217, 217);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navBar {
+  width: 300px;
+  max-width: 100%;
+}
+
+.navLink {
+  width: auto;
+  font-size: var(--fs8);
+  font-weight: bold;
+}
+
+.navLink:hover {
+  color: red;
+}
+
+.navLink:active {
+  color: white;
+}
